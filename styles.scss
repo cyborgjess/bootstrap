@@ -1,0 +1,117 @@
+$font-family: "Courier New";
+$bg-color: #090000;
+$text-color: #006400;
+$link-color: green;
+$link-hover-color: lightgreen;
+
+body {
+  font-family: $font-family;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  position: relative;
+}
+
+header {
+  background-color: $bg-color;
+  color: $text-color;
+  padding: 20px;
+  text-align: center;
+
+  img {
+    border-radius: 50%;
+    width: 165px;
+    height: 155px;
+    margin-top: 10px;
+  }
+}
+
+ul {
+  font-family: $font-family;
+  background-color: $bg-color;
+  color: $text-color;
+  list-style-type: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-weight: bold;
+  padding: 20px;
+  margin: 0;
+
+  li {
+    font-family: $font-family;
+    background-color: $bg-color;
+    color: $text-color;
+    padding: 5px 0;
+
+    &:hover {
+      color: $link-hover-color; // Change color on hover
+    }
+
+    a {
+      color: $link-color; // Change hyperlink text color
+      text-decoration: none; // Remove underline
+    }
+  }
+}
+.top-link {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 22px;
+  text-decoration: none;
+  font-family: "Caveat", cursive;
+  font-style: normal;
+  color: $text-color;
+  font-weight: bold;
+
+  &:hover {
+    color: $link-hover-color; // Change color on hover
+  }
+}
+
+main {
+  background-color: $bg-color;
+  color: $text-color;
+  padding: 20px;
+}
+
+h1,
+h2 {
+  font-size: 30px;
+  background-color: $bg-color;
+  color: $text-color;
+
+  &:hover {
+    color: $link-hover-color; // Change color on hover
+  }
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h2 {
+  text-align: center;
+
+  margin-bottom: 10px;
+}
+p {
+  background-color: $bg-color;
+  font-weight: bold;
+  color: $text-color;
+  padding: 10px;
+}
+
+footer {
+  background-color: $bg-color;
+  color: $text-color;
+  text-align: center;
+  padding: 3px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  margin-top: auto;
+  font-size: 12px;
+}

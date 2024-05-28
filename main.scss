@@ -100,6 +100,17 @@ li {
     margin-left: max(40px);
   }
 }
+.top-link {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 22px;
+  text-decoration: none;
+  font-family: "Caveat", cursive;
+  font-style: normal;
+  color: colors(primary);
+  font-weight: bold;
+}
 
 section#primary {
   color: #fff;

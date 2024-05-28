@@ -3,6 +3,7 @@ body {
   margin: 0;
   padding: 0;
   height: 100vh;
+  position: relative;
 }
 
 header {
@@ -11,45 +12,86 @@ header {
   padding: 20px;
   text-align: center;
 }
-
 header img {
   border-radius: 50%;
-  width: 150px;
-  height: 150px;
+  width: 165px;
+  height: 155px;
   margin-top: 10px;
-}
-
-main {
-  background-color: #090000; /* Black background */
-  color: #006400; /* Dark green text */
-  padding: 20px;
-}
-
-h1 {
-  background-color: #090000; /* Black background */
-  color: #006400; /* Dark green text */
-  margin-bottom: 20px;
-}
-
-h2 {
-  background-color: #090000; /* Black background */
-  color: #006400; /* Dark green text */
-  margin-bottom: 10px;
-}
-
-p {
-  background-color: #090000; /* Black background */
-  color: #006400; /* Dark green text */
-  padding: 10px;
-  font-weight: bold;
 }
 
 ul {
   font-family: "Courier New";
-  background-color: #090000; /* Black background */
-  color: #006400; /* Dark green text */
+  background-color: #090000;
+  color: #006400;
   list-style-type: none;
-  padding: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-weight: bold;
+  padding: 20px;
+  margin: 0;
+}
+ul li {
+  font-family: "Courier New";
+  background-color: #090000;
+  color: #006400;
+  padding: 5px 0;
+}
+ul li:hover {
+  color: lightgreen;
+}
+ul li a {
+  color: green;
+  text-decoration: none;
+}
+
+.top-link {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 22px;
+  text-decoration: none;
+  font-family: "Caveat", cursive;
+  font-style: normal;
+  color: #006400;
+  font-weight: bold;
+}
+.top-link:hover {
+  color: lightgreen;
+}
+
+main {
+  background-color: #090000;
+  color: #006400;
+  padding: 20px;
+}
+
+h1,
+h2 {
+  font-size: 30px;
+  background-color: #090000;
+  color: #006400;
+}
+h1:hover,
+h2:hover {
+  color: lightgreen;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+p {
+  background-color: #090000;
+  font-weight: bold;
+  color: #006400;
+  padding: 10px;
 }
 
 footer {
@@ -57,8 +99,9 @@ footer {
   color: #006400;
   text-align: center;
   padding: 3px;
-  position: auto;
+  position: fixed;
   bottom: 0;
   width: 100%;
   margin-top: auto;
-}
+  font-size: 12px;
+}/*# sourceMappingURL=styles.css.map */
